@@ -1,0 +1,174 @@
+/* GENERAL */
+
+html
+{
+    --res: calc(0.01*10vmin);
+    --res2: calc(0.01*10vmin);
+}
+
+*
+{
+    font-family: Nunito Sans;
+    
+}
+
+
+h1
+{
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+.btn-primary
+{
+    font-weight: bold;
+    font-family: Quicksand;
+    font-size: small;
+    background-color: #2667FF;
+}
+
+.btn-primary:hover
+{
+    background-color: white;
+    color: #0B1460;
+    transition-duration: 0.2s ease;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+
+.navbar
+{
+    color: rgba(0, 0, 0, 1);
+}
+
+.navbar img
+{
+    width: 10vw;
+    margin-left: 15vw;
+    margin-top: 2vw;
+}
+
+/* HOME */ 
+
+#home
+{
+    background-image:url('librairies/home/img-slider.png'), url('librairies/home/bgslider.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position:bottom right, center ;
+    background-size: 50vw,  cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 7vw;
+}
+
+/*@media (min-width: 600)
+{
+    #home-text{
+        width: 70vw
+    }
+    #home
+    {
+        background-image: url('librairies/home/img-slider.png'), url('librairies/home/bgslider.jpg');
+        background-position: right, center;
+        background-repeat: no-repeat;
+        background-size: 50vw, cover;
+    }
+    
+}*/
+
+
+#home-pres
+{
+    padding-left: 15vw;
+    margin-top: 10vw;
+    height: auto;
+    flex-direction: row;
+}
+
+
+#home-text
+{
+    flex-shrink: initial;
+}
+
+#home h1
+{
+    font-size: calc(70 * var(--res));
+    text-transform: uppercase;
+    color: #0B1460;
+    width: 30vw ;
+}
+
+
+#home p
+{
+    font-size: calc(22* var(--res));
+    font-weight: bold;
+    color: #0B1460;
+    width: 30vw;
+}
+
+
+/* OBJECTIFS */
+
+#objectif
+{
+    background-image: url('librairies/home/bg-1.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: #0B1460;
+    color: #fff;
+}
+
+#objectif .row
+{
+    width: 30vw;
+    position: relative;
+    right: -50%;
+    padding-top: 8vw;
+    padding-bottom: 7vw;
+}
+
+#objectif small
+{
+    color: #00fcef;
+    font-weight: bold;
+}
+
+#fontaw
+{
+    display: flex;
+    row-gap:initial;
+    align-items: center;
+
+}
+
+#objectif .fa-chart-line
+{
+    color: #00fcef;
+    margin-right: 2vw;
+    font-size: 3vw;
+    display: inline-block;
+}
+
+#objectif button
+{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0,3);
+    border-radius: 3%;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    width: 50%;
+}
+
+#objectif button:hover
+{
+    background-color: #fff;
+    color: #0B1460;
+    font-weight: bold;
+    width: 50%;
+}
