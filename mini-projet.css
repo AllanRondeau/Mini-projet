@@ -81,7 +81,6 @@ h1
 
 #home-pres
 {
-    padding-left: 15vw;
     margin-top: 10vw;
     height: auto;
     flex-direction: row;
@@ -117,19 +116,28 @@ h1
 {
     background-image: url('librairies/home/bg-1.png');
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 90%;
     background-position: center;
     background-color: #0B1460;
     color: #fff;
+    max-height: 100vh;
 }
 
-#objectif .row
+#objectif .container
+{
+    max-height: 50vh;
+}
+
+#objectif-text
 {
     width: 30vw;
+    height: auto;
     position: relative;
     right: -50%;
     padding-top: 8vw;
     padding-bottom: 7vw;
+    font-size: calc(18 * var(--res));
+    transform: translate(0,-20vw);
 }
 
 #objectif small
@@ -143,7 +151,6 @@ h1
     display: flex;
     row-gap:initial;
     align-items: center;
-
 }
 
 #objectif .fa-chart-line
@@ -171,4 +178,34 @@ h1
     color: #0B1460;
     font-weight: bold;
     width: 50%;
+}
+
+#objectif img
+{
+    display: flex;
+    position: relative;
+}
+
+#guyphoto
+{
+    z-index: 1;
+    width: 20vw;
+    transform: translate(0, 10vw);
+    border-bottom-left-radius: 50% 20% ;
+    border-bottom-right-radius: 50% 30% ;
+}
+
+.shape1
+{
+    width: 15vw;
+    height: fit-content;
+    z-index: 0;
+    transform: translate(-23vw, 9vw);
+}
+.shape2
+{
+    z-index: 0;
+    width: 24vw;
+    height: fit-content;
+    transform: translate(-38vw, 15vw)
 }
