@@ -3,7 +3,6 @@
 html
 {
     --res: calc(0.01*10vmin);
-    --res2: calc(0.01*10vmin);
 }
 
 *
@@ -17,6 +16,13 @@ h1
 {
     font-family: Quicksand;
     font-weight: bold;
+}
+
+h2
+{
+    font-family: Quicksand;
+    font-weight: bold;
+    color: #0B1460;
 }
 
 .btn-primary
@@ -112,7 +118,7 @@ h1
 
 /* OBJECTIFS */
 
-#objectif
+#objectif /* image de fond et couleur de fond de la section objectif*/
 {
     background-image: url('librairies/home/bg-1.png');
     background-repeat: no-repeat;
@@ -123,6 +129,7 @@ h1
     max-height: 100vh;
 }
 
+/* taille et forme du texte et de la div contenant le texte*/
 #objectif .container
 {
     max-height: 50vh;
@@ -180,6 +187,7 @@ h1
     width: 50%;
 }
 
+/* superposition des photos, taille et placementau bon endroit */
 #objectif img
 {
     display: flex;
@@ -208,4 +216,73 @@ h1
     width: 24vw;
     height: fit-content;
     transform: translate(-38vw, 15vw)
+}
+
+
+/* SERVICE */
+
+
+
+#service .heading
+{
+    text-align: center;
+    margin-top: 6vw;
+
+}
+
+#service h1
+{
+    color: #0B1460;
+    font-size: calc(50 * var(--res));
+    font-weight: bolder;
+}
+
+#service p
+{
+    color:#2667FF;
+    font-size: calc(20 * var(--res));
+    font-weight: bold;
+    margin-top: 2vw;
+}
+
+#block-carte
+{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-gap: 2vw;
+    margin-left: 4vw;
+}
+
+
+
+#service .carte
+{
+    background-color: #f5f5f5;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    margin-top: 5vw;
+    border-radius: 3%;
+    justify-content: space-between;
+}
+
+#service .carte img
+{
+    padding: 3vw 5vw;
+}
+
+#service .carte h2
+{
+    font-size: calc(30 * var(--res));
+
+}
+
+#service .carte small
+{
+    padding-bottom: 3vw;
+}
+
+#illustration-service
+{
+    vertical-align: middle;
 }
