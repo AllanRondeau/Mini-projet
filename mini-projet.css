@@ -50,7 +50,7 @@ h2
 
 .navbar img
 {
-    width: 10vw;
+    width: 8vw;
     margin-left: 15vw;
     margin-top: 2vw;
 }
@@ -222,6 +222,11 @@ h2
 /* SERVICE */
 
 
+#service
+{
+
+}
+
 
 #service .heading
 {
@@ -284,5 +289,5 @@ h2
 
 #illustration-service
 {
-    vertical-align: middle;
+
 }
