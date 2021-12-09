@@ -50,9 +50,74 @@ h2
 
 .navbar img
 {
-    width: 8vw;
+    width: 7vw;
     margin-left: 15vw;
-    margin-top: 2vw;
+    margin-top: 0.5vw;
+    position: sticky;
+    position: relative;
+    top: -25vw;
+}
+
+#navbar-menu
+{
+    margin-right: 15vw;
+    margin-bottom: 10vw;
+}
+#navbar-menu a
+{
+    font-size: calc(25*var(--res));
+    color: #0B1460;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#navbar-menu button
+{
+    margin-left: 5vw;
+    justify-content: end;
+
+}
+
+.navbar-toggler
+{
+    border: none;
+}
+.navbar-toggler-icon
+{
+    color: #0B1460 ;
+    justify-content: center;
+}
+#navbar-menu a:hover
+{
+    color: #2667FF;
+}
+
+.navbar-nav button 
+{
+    font-size: calc(20*var(--res));
+    width: fit-content;
+    text-align: center;
+}
+
+@media (max-width: 800px)
+{
+    #navbar-menu
+    {
+        margin-right: 0vw;
+    }
+    .navbar>.container-fluid
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5%;
+    }
+
+    .navbar-nav a, .navbar-nav button
+    {
+        font-size: calc(30*var(--res));
+    }
+    
 }
 
 /* HOME */ 
@@ -62,54 +127,75 @@ h2
     background-image:url('librairies/home/img-slider.png'), url('librairies/home/bgslider.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position:bottom right, center ;
-    background-size: 50vw,  cover;
+    background-size: 45vw,  cover;
     height: 100vh;
     width: auto;
     display: flex;
     padding-top: 7vw;
 }
 
-/*@media (min-width: 600)
+@media (max-width: 600px) 
+
 {
-    #home-text{
-        width: 70vw
-    }
     #home
     {
-        background-image: url('librairies/home/img-slider.png'), url('librairies/home/bgslider.jpg');
-        background-position: right, center;
-        background-repeat: no-repeat;
-        background-size: 50vw, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: right;
+        height: fit-content;
     }
-    
-}*/
+
+    #home-pres
+    {
+        width:50vw;
+        margin-left: -5vw;
+    }
+    #home-text
+    {
+        width:50vw;
+        padding-bottom: 2vw;
+    }
+    #home h1
+    {
+        width: 80vw;
+    }
+
+    #home p
+    {
+        width: 50vw;
+    }
+} 
 
 
 #home-pres
 {
     margin-top: 10vw;
     height: auto;
-    flex-direction: row;
 }
 
 
 #home-text
 {
-    flex-shrink: initial;
+    margin-left: 15vw;
 }
 
 #home h1
 {
-    font-size: calc(70 * var(--res));
+    font-size: calc(65 * var(--res));
     text-transform: uppercase;
     color: #0B1460;
     width: 30vw ;
 }
 
+#home button
+{
+    width: fit-content;
+    height: auto;
+}
+
 
 #home p
 {
-    font-size: calc(22* var(--res));
+    font-size: calc(20* var(--res));
     font-weight: bold;
     color: #0B1460;
     width: 30vw;
