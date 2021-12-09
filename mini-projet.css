@@ -3,6 +3,7 @@
 html
 {
     --res: calc(0.01*10vmin);
+    scroll-behavior: smooth;
 }
 
 *
@@ -119,6 +120,29 @@ h2
     }
     
 }
+
+.navbar a
+{
+    font-size: calc(20 * var(--res));
+    color: #0B1460 !important;
+    font-weight: bold
+}
+
+.navbar a:hover, .navbar li.active a
+{
+    font-size: calc(25 * var(--res));
+    color: #2667FF !important;
+    font-weight: bold;
+}
+
+.navbar button
+{
+    margin-left: 5vw;
+    width: 8vw;
+    height: 2vw;
+
+}
+
 
 /* HOME */ 
 
@@ -323,6 +347,13 @@ h2
     font-weight: bolder;
 }
 
+#service-body
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #service p
 {
     color:#2667FF;
@@ -331,13 +362,10 @@ h2
     margin-top: 2vw;
 }
 
-#block-carte
+.block-carte
 {
-    float: left;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr;
-    grid-gap: 1vw;
-    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
 }
 
 #service .carte
@@ -346,7 +374,7 @@ h2
     width: fit-content;
     height: auto;
     text-align: center;
-    margin-top: 5vw;
+    margin: 1vw 2vw 0 0;
     border-radius: 3%;
 }
 
@@ -369,11 +397,11 @@ h2
 
 #illustration-service
 {
-    float: right;
+    margin-left: 4vw;
 }
 #illustration-service img
 {
-    width: 35vw;
+    width: 30vw;
     height: auto;
 }
 
