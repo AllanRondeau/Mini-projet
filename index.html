@@ -7,24 +7,21 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a52f022bec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="mini-projet.css">
     <title>Projet Intégration</title>
     
 </head>
-<<<<<<< HEAD
-<body>
-    <section id="navbar">
-        <nav class=""">
-            <img src="librairies\home\logo.png" alt="logo">
+<body data-spy="scroll" data-target=".navbar" data-offset="60"> <!--Scrollspy pour localiser dans la navbar-->
+    <section id="navbar"> <!--début de la navbar-->
+        <nav class="navbar fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid" id="navbar-menu">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> <!--navbar responsive, devient un menu déroulant quand l'écran est trop petit-->
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbar-menu"> <!--section de la navbar-->
                         <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
                         <a class="nav-link" href="#">A propos </a>
@@ -35,43 +32,15 @@
                 </div>
             </nav>
         </nav>
-    </section>
-    
-=======
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div>
-            <img src="librairies\home\logo.png" alt="logo">
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-            <i class="fas fa-bars"></i>
-        </button>
-          
-        <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home" >Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">A propos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-primary">Contact <span class="fas fa-arrow-right"></span></button>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
->>>>>>> 2ab3c5f2e0c0f963d2051042165461d5a8e54fc0
+    </section> <!--fin de sectiond de la navbar-->
+<!--Section home (page d'acceuil avec nom du site)-->
     <section id="home">
         <div class="container">
             <div class="row">
-                <div id="home-pres">
+                <img src="librairies\home\logo.png" alt="logo"> <!--logo de l'entreprise-->
+                <div id="home-pres"> <!--paragraphe de près du site -->
                     <div id="home-text">
-                        <h1>Projet intégration <br>Saint Vincent</h1>
+                        <h1>Projet <br>intégration <br>Saint Vincent</h1>
                         <p>Lorem ipsum dolor sit amet. Ea sint libero At pariatur saepe et consequatur.</p>
                         <button type="button" class="btn btn-primary">Contact <span class="fas fa-arrow-right"></span></button>
                     </div> 
@@ -79,46 +48,44 @@
             </div>
         </div>
     </section>
-
+<!--Section objectif-->
     <section id="objectif">
-        <div>
+        <div id="objectif-content">    
             <div class="container">
-                <div class="row">
+                <div class="row"> <!--div avec les images à imbriqués-->
                     <img src="librairies/home/img_person_Home01-W6UUZD4-e1634713181555.png" alt="person_home" id="guyphoto">
                     <img src="librairies/home/shape-1.png" alt="shape1" class="shape1">
                     <img src="librairies/home/shape-2.png" alt="shape2" class="shape2">
                 </div>
-
+            </div>
+            <div class="container">
+                <div id="objectif-text"> <!--div avec paragraphe de la section objectif-->
+                    <div class="heading">
+                        <h1> Titre majeur </h1>
+                        <p><small>Sous titre</small></p>   
+                    </div>
+                    <div>
+                        <p>Aut saepe fuga non vitae voluptas ut debitis dolor sit voluptates porro 
+                        est amet sint cum commodi iste. Ea dolorum quia mollitia autem et sequi dolore? Eum minima </p>
+                    </div>
+                    <div id="fontaw"> <!--Petit paragraphe avec un font awesome-->
+                        <span class="fas fa-chart-line"></span>
+                        <p>Lorem ipsum dolor sit amet. Sit quod laboriosam et porro libero aut iste repellat aut repudiandae omnis 
+                        sit nulla minus hic vero temporibus. Id tenetur quia et tempora </p>
+                    </div>
+                    <button type="button" class="btn btn-secondary"> En savoir plus <span class="fas fa-arrow-right"></span></button>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row" id="objectif-text">
-                <div class="heading">
-                    <h1> Titre majeur </h1>
-                    <p><small>Sous titre</small></p>   
-                </div>
-                <div>
-                    <p>Aut saepe fuga non vitae voluptas ut debitis dolor sit voluptates porro 
-                    est amet sint cum commodi iste. Ea dolorum quia mollitia autem et sequi dolore? Eum minima 
-                    amet ut quasi eveniet et saepe illum. Ut animi ipsam est explicabo esse sit blanditiis nostrum?</p>
-                </div>
-                <div id="fontaw">
-                    <span class="fas fa-chart-line"></span>
-                    <p>Lorem ipsum dolor sit amet. Sit quod laboriosam et porro libero aut iste repellat aut repudiandae omnis 
-                    sit nulla minus hic vero temporibus. Id tenetur quia et tempora </p>
-                </div>
-                <button type="button" class="btn btn-secondary"> En savoir plus <span class="fas fa-arrow-right"></span></button>
-            </div>
-        </div>
-    </section> 
+    </section> <!-- fin de section objectif-->
 <!--SECTION SERVICE-->
     <section id="service">
-        <div class="row" id="service-content">
+        <div id="service-content">
             <div class="heading">
                 <h1> Services </h1>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div id="service-body">    
+            <div id="service-body"> <!--mise en forme de la disposition des cartes service (4 cartes)-->   
                 <div class="block-carte">    
                     <div class="carte">
                         <img src="librairies/home/icon-01.png" alt="icon-01">
@@ -143,67 +110,71 @@
                         <small> Quis autem reprehenderit <br> quiinea volup tate </small>
                     </div>
                 </div><!--fin div block-carte-->
-                <div id="illustration-service">
+                <div id="illustration-service"> <!--image d'illustration de la section service-->
                     <img src="librairies/home/service-illustration.png" alt="illustration_service" >
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!--fin de section service-->
 <!--SECTION PORTOFLIO-->
-    <section id="portfolio">
+    <section id="portfolio"> 
         <div class="heading">
             <h1> Titre des cas </h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
-        <div id="illustration-portfolio">
-            <div class="portfolio-carte">
-                <img src="librairies/home/portfolio-01.jpg" alt="portfolio-01">
-                <small>Categorie 1</small>
-                <h2>Lorem ipsum</h2>
+        <div id="illustration-portfolio"> <!--mise en forme des cartes de la section portfolio-->
+            <div class="bloc-portfolio">    
+                <div class="portfolio-carte">
+                    <img src="librairies/home/portfolio-01.jpg" alt="portfolio-01">
+                    <small>Categorie 1</small>
+                    <h2>Lorem ipsum</h2>
+                </div>
+                <div class="portfolio-carte">
+                    <img src="librairies/home/portfolio-02.jpg" alt="portfolio-01">
+                    <small>Categorie 1</small>
+                    <h2>Lorem ipsum</h2>
+                </div>
             </div>
-            <div class="portfolio-carte">
-                <img src="librairies/home/portfolio-02.jpg" alt="portfolio-01">
-                <small>Categorie 1</small>
-                <h2>Lorem ipsum</h2>
-            </div>
-            <div class="portfolio-carte">
-                <img src="librairies/home/portfolio-03.jpg" alt="portfolio-01">
-                <small>Categorie 1</small>
-                <h2>Lorem ipsum</h2>
-            </div>
-            <div class="portfolio-carte">
-                <img src="librairies/home/portfolio-04.jpg" alt="portfolio-01">
-                <small>Categorie 1</small>
-                <h2>Lorem ipsum</h2>
+            <div class="bloc-portfolio">   
+                <div class="portfolio-carte">
+                    <img src="librairies/home/portfolio-03.jpg" alt="portfolio-01">
+                    <small>Categorie 1</small>
+                    <h2>Lorem ipsum</h2>
+                </div>
+                <div class="portfolio-carte">
+                    <img src="librairies/home/portfolio-04.jpg" alt="portfolio-01">
+                    <small>Categorie 1</small>
+                    <h2>Lorem ipsum</h2>
+                </div>
             </div>
         </div>
     </section>
-
+<!--Section remark (commentaire utilisateur...)-->
     <section id="remark">
         <div class="container" id="remark-content">
-            <div id="remark_img">
-                <img src="librairies/home/img_testimonial_Home01-PUXTFB4.jpg" alt="img_testimonial_Home01" style="width: 20vw;">
+            <div id="remark_img"> <!--image d'illustration d'une utilisatrice lambda-->
+                <img src="librairies/home/img_testimonial_Home01-PUXTFB4.jpg" alt="img_testimonial_Home01" >
             </div>
-            <div id="client-remark">
+            <div id="client-remark"> <!--bloc d'affichage d'un commentaire utilisateur avec le message, le nom, la photo de profil et la profession-->
                 <div class="heading">
                     <h1>What's Clients Say</h1>
                     <p>Vestibulum ornare metus mauris,ac tempor dui congue eu</p>
                 </div>
-                <div>
+                <div id="client-comment-area">
                     <p id="client-comment">Lorem ipsum dolor sit amet. Et accusantium molestiae et 
                     quibusdam autem et ipsam ducimus et impedit internos et possimus rerum. 
                     Eum fugiat officia ut commodi suscipit sit omnis cumque et quia ratione 
-                    sed illum iusto est consectetur optio.</p>
+                    sed illum iusto est consectetur optio.</p><!--commentaire-->
                 </div>
                 <div>
                     <div id="user">    
-                        <img src="librairies/home/img_testimonial_Home01-Q3CTTNK.jpg" alt="client-remark">
+                        <img src="librairies/home/img_testimonial_Home01-Q3CTTNK.jpg" alt="client-remark"><!--PP du client-->
                         <div id="user-name">    
-                            <h2>William P. Harris</h2>
-                            <p>Senior manager</p>
+                            <h2>William P. Harris</h2><!--nom client-->
+                            <p>Senior manager</p><!--profession client-->
                         </div>
                     </div>
-                    <div>
+                    <div> <!--fausse barre de déroulement, futur carousel-->
                         <i class="fas fa-circle"></i>
                         <i class="fas fa-ellipsis-h"></i>
                     </div>
@@ -211,21 +182,21 @@
             </div>
         </div>
     </section>
-
+<!--Section Contact (formulaire de contact)-->
     <section id="contact">
         <div id="contact-content">    
-            <div id="contact-desc">
-                <div class="heading">
+            <div id="contact-desc"> <!--paragraphe de mise en avant de l'entreprise-->
+                <div class="heading"> 
                     <h1>Best unique <br>Solutions</h1>
                     <p>Vestibulum ornare metus mauris,ac tempor dui congue eu</p>
                 </div>
-                <p id="contact-text">
+                <p id="contact-text"> <!--paragraphe de description-->
                     Lorem ipsum dolor sit amet. Et accusantium molestiae et 
                     quibusdam autem et ipsam ducimus et impedit internos et possimus rerum. 
                     Eum fugiat officia ut commodi suscipit sit omnis cumque et quia ratione 
                     sed illum iusto est consectetur optio.
                 </p>
-                <div id="number">
+                <div id="number"> <!--chiffre de réussite de l'entreprise-->
                     <div>
                         <h1>950+</h1>
                         <p>First number</p>
@@ -237,7 +208,7 @@
                 </div>
             </div>
             <form>
-                <h1>Contact</h1>
+                <h1>Contact</h1> <!--formulaire de contact-->
                 <small>Testing</small>
                 <div class="form">
                     <input type="text" name="Full_name" placeholder="Full name" required>
@@ -252,98 +223,102 @@
                 </div>
             </form>
         </div>
-    </section>
-
+    </section> <!-- fin de la section contact-->
+<!--Section blog et news (carte des actualités)-->
     <section id="blog">
-        <div class="heading">
+        <div class="heading"> 
             <h1>Latest Blog & News</h1>
             <p>Donec hendrerit in odio voluptat</p>
         </div>
-        <div id="blog-content">
-            <div class="blog_carte">
+        <div id="blog-content"> <!--crétation de carte "news" avec les futures actualités-->
+            <div class="blog_carte"> 
+                <h2>Article avec un long titre sur deux lignes</h2><!--nom de l'article-->
+                <div class="blog-date">   <!--date de l'article-->
+                    <i class="far fa-calendar-alt"></i> <!--font awesome d'un calendrier pour accompagner la date-->
+                    <h3>1er janvier 2000</h3>
+                </div>
+                <img src="librairies/home/blog-01.jpg" alt="blog01" > <!-- image d'illustration de l'article-->
+                <p>Sit amet consecte adipiscing eiusmod see tempor incididunt labore dolore</p> <!--petite descritpion de l'article-->
+                <button type="button" class="btn btn-secondary">Lire la suite <span class="fas fa-arrow-right"></span> </button>
+            </div>
+            <div class="blog_carte" id="second-news-card">
                 <h2>Article avec un long titre sur deux lignes</h2>
                 <div class="blog-date">   
                     <i class="far fa-calendar-alt"></i> 
                     <h3>1er janvier 2000</h3>
                 </div>
-                <img src="librairies/home/blog-01.jpg" alt="blog01" style="width: 17vw;">
+                <img src="librairies/home/blog-02.jpg" alt="blog02" >
                 <p>Sit amet consecte adipiscing eiusmod see tempor incididunt labore dolore</p>
                 <button type="button" class="btn btn-secondary">Lire la suite <span class="fas fa-arrow-right"></span> </button>
             </div>
-            <div class="blog_carte">
+            <div class="blog_carte" id="last-news-card">
                 <h2>Article avec un long titre sur deux lignes</h2>
                 <div class="blog-date">   
                     <i class="far fa-calendar-alt"></i> 
                     <h3>1er janvier 2000</h3>
                 </div>
-                <img src="librairies/home/blog-02.jpg" alt="blog02" style="width: 17vw;">
-                <p>Sit amet consecte adipiscing eiusmod see tempor incididunt labore dolore</p>
-                <button type="button" class="btn btn-secondary">Lire la suite <span class="fas fa-arrow-right"></span> </button>
-            </div>
-            <div class="blog_carte">
-                <h2>Article avec un long titre sur deux lignes</h2>
-                <div class="blog-date">   
-                    <i class="far fa-calendar-alt"></i> 
-                    <h3>1er janvier 2000</h3>
-                </div>
-                <img src="librairies/home/blog-01.jpg" alt="blog01" style="width: 17vw;">
+                <img src="librairies/home/blog-01.jpg" alt="blog01" >
                 <p>Sit amet consecte adipiscing eiusmod see tempor incididunt labore dolore</p>
                 <button type="button" class="btn btn-secondary">Lire la suite <span class="fas fa-arrow-right"></span> </button>
             </div>
         </div>
-    </section>
-
+    </section> <!--fin de la div news-->
+<!--Section learn-->
     <section id="learn">
         <div id="learn-content">    
             <div id="learn-text">
-                <div class="heading">
+                <div class="heading"> <!--petite description de formation-->
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
                     <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
                 </div>
                 <div id="update">
-                    <i class="far fa-dot-circle"></i>
+                    <i class="far fa-dot-circle"></i> <!--font awesome symbole d'update-->
                     <p>update info</p>
                 </div>
                 <button type="button" class="btn btn-primary">Contact <span class="fas fa-arrow-right"></span></button>
             </div>
-            <div>
+            <div id="learn-img"> <!--image illustration professor-->
                 <img src="librairies/home/img-seo.png" alt="seo">
             </div>
         </div>
     </section>
-
-    <section id="footer">
+<!--footer-->
+    <section id="footer"> <!--section footer avec les menus et les informations légal-->
         <div id="menu-content">
-            <div class="menu">
-                <h3>Menu 1</h3>
-                <h4>Phone number</h4>
-                <div id="menu-phone">
-                    <i class="fas fa-phone"></i>
-                    <p>+33 12 23 45 56</p>
+            <div class="bloc-menu">    
+                <div class="menu">
+                    <h3>Menu 1</h3>
+                    <h4>Phone number</h4>
+                    <div id="menu-phone">
+                        <i class="fas fa-phone"></i>
+                        <p>+33 12 23 45 56</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <h3>Menu 2</h3>
+                    <small>55 Queensberry Street, North VIC 3051 Australia</small>
+                    <small><br>support@qolleinf.com</small>
                 </div>
             </div>
-            <div class="menu">
-                <h3>Menu 2</h3>
-                <small>55 Queensberry Street, North VIC 3051 Australia</small>
-                <small><br>support@qolleinf.com</small>
-            </div>
-            <div class="menu">
-                <h3>Menu 3</h3>
-                <div id="menu-link">
-                    <small>Lien 1</small>
-                    <small>Lien 2</small>
-                    <small>Lien 3</small>
+            <div class="bloc-menu">
+                <div class="menu">
+                    <h3>Menu 3</h3>
+                    <div id="menu-link">
+                        <small>Lien 1</small>
+                        <small>Lien 2</small>
+                        <small>Lien 3</small>
+                    </div>
                 </div>
-            </div>
-            <div class="menu">
-                <h3>Menu 4</h3>
-                <small>Dolor sit amet consectetur adipiscing</small>
-                <div id="social-media">
-                    <h4>Follow</h4>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-behance-square"></i>
+                <div class="menu">
+                    <h3>Menu 4</h3>
+                    <small>Dolor sit amet consectetur adipiscing</small>
+                    <div id="social-media">
+                        <h4>Follow</h4>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-behance-square"></i>
+                    </div>
                 </div>
             </div>
         </div>
